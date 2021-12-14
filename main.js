@@ -6,25 +6,23 @@ window.addEventListener('DOMContentLoaded', ()=>{
 })
 function filterReturn(){
  //get the buttons 
-const filter_btns = document.querySelectorAll('.filter-btns');
+const selectedVal = document.querySelector('select');
     //loop through the btns 
-    filter_btns.forEach(btns=>{
-      btns.addEventListener('click',(e)=>{
-        const data_id = e.currentTarget.dataset.id;
+      selectedVal.addEventListener('click',()=>{
+        const val = selectedVal.value;
         //filter the indutry
         const filterRanks = InternetCompanies.filter((ranks)=>{
-          if(ranks.industry === data_id){
+          if(ranks.industry === val){
             return ranks;
           }
         });
-        if(data_id === 'all'){
+        if(val === 'all'){
           ourOutput(InternetCompanies);
         }else{
           ourOutput(filterRanks);
         }
      
     });
-    })
 }
 
 //get the table content div
@@ -33,7 +31,7 @@ const table = document.querySelector('#table');
 //function for our output
 function ourOutput(output){
  const displayContent =  output.map((companies)=>{
-   console.log(companies.industry)
+  //  console.log(companies.industry)
    //remove the last character from the revenue strting
    const rev = companies.revenue;
    const removedLastChar =rev.substring(0, rev.length-1);
@@ -49,7 +47,7 @@ function ourOutput(output){
         `;
   });
   const contentJoined = displayContent.join("");
-  table.innerHTML += contentJoined;
+  table.innerHTML = contentJoined;
 }
 
 

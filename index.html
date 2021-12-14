@@ -10,35 +10,36 @@
 <body>
     <div class="container">
         <div class="title">
-            <h1>List of Largest Internet companies in the world </h1>
+            <h1>Largest Internet companies in the world </h1>
         </div><hr>
-        <div class="buttons">
-            <button class="filter-btns" data-id="all">All</button>
-        <button class="filter-btns" data-id="social media">Social Media</button>
-        <button class="filter-btns" data-id="travel">Travel</button>
-        <button class="filter-btns" data-id="transportation">Transportation</button>
-        <button class="filter-btns" data-id="ecommerce">Ecommerce</button>
-        <button class="filter-btns" data-id="software">Software</button>
-        <button class="filter-btns" data-id="internet">Internet</button>
-        <button class="filter-btns" data-id="financial services">Financial Services</button>
-        <button class="filter-btns" data-id="search engine">Search engine</button>
-        <button class="filter-btns" data-id="web hosting">Web hosting</button>
-        <button class="filter-btns" data-id="Delivery">Delivery</button>
-        <button class="filter-btns" data-id="cybersecurity">Cyber Security</button>
-        </div>
         
         <div class="table-content">
             <div class="tables">
-                <!-- <table id="headers">
+                <table id="headers">
                     <tr>
                         <th>Rank</th>
                         <th>Company</th>
                         <th>Revenue($B)</th>
                         <th>Employees</th>
                         <th>Year Founded</th>
-                        <th>Industry</th>
+                        <th>Industry
+                            <select name="industry" id="industry">
+                                <option value="all">All</option>
+                                <option value="ecommerce">Ecommerce</option>
+                                <option value="social media">Social media</option>
+                                <option value="travel">Travel</option>
+                                <option value="Delivery">Delivery</option>
+                                <option value="cybersecurity">Cyber Security</option>
+                                <option value="transportation">Transportation</option>
+                                <option value="internet">Internet</option>
+                                <option value="search engine">Search engine</option>
+                                <option value="web hosting">Web Hosting</option>
+                                <option value="software">Software</option>
+                                <option value="financial services">Financial Services</option>
+                            </select>
+                        </th>
                     </tr>
-                </table> -->
+                </table>
                 <table id="table">
                     <tr>
                         <th>Rank</th>

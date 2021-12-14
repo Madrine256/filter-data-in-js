@@ -8,7 +8,7 @@ export const InternetCompanies =[
         employees : 1298000,
         headquarters : 'seatle',
         founded : 1994,
-        industry : 'Ecommerce'
+        industry : 'ecommerce'
     },
     {
         rank : 2,
@@ -26,7 +26,7 @@ export const InternetCompanies =[
         employees : 310000,
         headquarters : 'beijing',
         founded : 1998,
-        industry : 'Ecommerce'
+        industry : 'ecommerce'
     },
     {
         rank : 4,
@@ -53,7 +53,7 @@ export const InternetCompanies =[
         employees : 117600,
         headquarters : 'hangzhou',
         founded : 1999,
-        industry : 'Ecommerce'
+        industry : 'ecommerce'
     },
     {
         rank : 7,
